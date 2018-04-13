@@ -3,3 +3,45 @@
 	margin: 0;
 }
 
+body {
+	font-family: Arial;
+}
+
+/* ----------| Header |---------- */
+
+header {
+	background: #E05151;
+}
+
+
+#logo_headline {
+	color: #fff;
+	font-size: 1em;
+	padding: 20px 0;
+}
+
+#logo_headline span {
+	position: relative; /* To move it up */
+	top: -22px;
+}
+
+nav {
+	background: #868686;
+	border-top: 2px solid #fff;
+	padding: 10px 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0 20px;
+}
+
+nav li {
+	display: inline; /* to make menu horizontal instead of default vertical */
+}
+
+nav a {
+	text-decoration: none; /* remove undline */
+	color: #fff;
+	padding: 0 10px;
+}
