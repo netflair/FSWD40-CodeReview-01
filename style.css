@@ -54,8 +54,8 @@ nav a {
 
 main {
 	width: 70%;
-	margin: 0 auto;
-	margin-top:20px;
+	margin: 20px auto;
+	overflow: hidden;
 }
 
 .image-block {
@@ -95,13 +95,24 @@ main {
 }
 
 
+/* ----------| Footer |---------- */
+
+footer {
+	background: #E05151;
+	padding: 20px;
+	clear: both;
+	text-align: center;
+	color: #fff;
+}
 
 
+
+/* ----------| Added Breakpoints to be more responsive |---------- */
 @media (max-width: 1290px) {
 
 #logo_headline, main, nav ul {
 	width: 100%;
+	clear: both;
 }
-
 
 }
