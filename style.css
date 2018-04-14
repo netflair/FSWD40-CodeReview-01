@@ -1,133 +1,328 @@
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
+
+/* ----------| General Styles |---------- */
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%; /* To push footer on bottom when little content */
 }
+
+main {
+    width: 70%;
+    margin: 40px auto;
+    overflow: hidden;
+    min-height: 69.7%; /* To push footer on bottom when little content */
+}
+
+header, h1, h2, h3 {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+h1, h2, h3 {
+	color: #424242;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+main p::first-letter {
+    font-size: 3em;
+    color: #E05151;
+    font-weight: bold;
+}
+
 
 /* ----------| Header |---------- */
 
 header {
-	font-family: 'Archivo Narrow', sans-serif;
-	background: #E05151;
+    background: #E05151;
 }
 
 
 #logo_headline {
-	color: #fff;
-	font-size: 1em;
-	padding: 20px 0;
-	width: 70%;
-	margin: 0 auto;
+    color: #fff;
+    font-size: 1em;
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
 }
 
 #logo_headline span {
-	position: relative; /* To move it up */
-	top: -22px;
+    position: relative;
+    /* To move it up */
+    top: -22px;
 }
- 
+
 nav {
-	background: #868686;
-	border-top: 2px solid #fff;
-	padding: 10px 0;
+    background: #868686;
+    border-top: 2px solid #fff;
+    padding: 10px 0;
 }
 
 nav ul {
-	list-style: none;
-	width: 70%;
-	margin: 0 auto;
-	padding-left: 33px;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 33px;
 }
 
 nav li {
-	display: inline; /* to make menu horizontal instead of default vertical */
+    display: inline;
+    /* to make menu horizontal instead of default vertical */
 }
 
 nav a {
-	text-decoration: none; /* remove undline */
-	color: #fff;
-	padding: 0 10px;
-	font-size: 1.1em;
+    padding: 0 10px;
+    font-size: 1.1em;
 }
 
-.current, nav a:hover {
-	color: #632021;
+.current,
+nav a:hover {
+    color: #632021;
 }
+
+
 
 /* ----------| Main Content | Home |---------- */
 
-main {
-	width: 70%;
-	margin: 40px auto;
-	overflow: hidden;
-}
-
 .image-block {
-	float: left;
-	min-width: 450px;
-	width: 48%;
-	height: 355px;
-	margin-bottom: 10px;
-}
-
-.image-container [class^="pic"] {
-	width: 100%;
-	position: absolute;
-}
-
-.pic-group {
-	bottom: 0;
-}
-
-.pic-kids {
-	top: -33px;
-	width: 120% !important;
+    float: left;
+    width: 48%;
+    height: 355px;
+    margin-bottom: 10px;
 }
 
 .image-container {
-	height:300px;
-	overflow: hidden;
-	position: relative;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
+/* Images */
+#pic-group {
+    position: absolute;
+    bottom: -20px;
+}
+
+#pic-radio, #pic-blueman, #pic-group{
+    width: 100%
+}
+
+
+#pic-kids {
+    position: absolute;
+    top: -33px;
+    width: 120%;
+}
+/* Images--END */
+
 .image-block h2 {
-	font-family: 'Archivo Narrow', sans-serif;
-	font-size: 1.5em;
-	padding: 10px 0;
-	text-align: center;
-	height: 50px;
-	color: #424242;
+    font-size: 1.5em;
+    padding: 10px 0;
+    text-align: center;
+    height: 50px;
 }
 
 .float_r {
-	float: right;	
+    float: right;
 }
 
+
+
+
+/* ----------| Main Content | About Me |---------- */
+
+/* No additional styles. ::first letter on top in General Styles */
+
+
+
+
+/* ----------| Main Content | Blog |---------- */
+
+#blog-entry {
+    width: 80%;
+    float: left;
+}
+
+.blog-image {
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.entry img {
+    width: 100%;
+    position: relative;
+}
+
+
+
+aside {
+    width: 20%;
+    float: right;
+    background: #E05151;
+    height: 389px;
+    position: relative;
+    top: -20px;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+/* ----------| Main Content | Contact |---------- */
+
+.col-left {
+    width: 60%;
+    float: left;
+}
+
+.col-right {
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+}
+
+[type="text"],
+textarea {
+    background: lightgrey;
+    border: 1px solid #000;
+    width: 100%;
+    color: #000;
+    font-size: 1em;
+}
+
+input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+[type="submit"] {
+    height: 40px;
+    border: 1px solid #000;
+    background: lightgrey;
+    color: #000;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #E05151;
+}
+
+[type="submit"]:hover {
+    background: #E05151;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.col-right img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.col-right a {
+	color: #000;
+}
+
+#msg {
+	display: none;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #E05151;
+    font-weight: bold;
+}
 
 /* ----------| Footer |---------- */
 
 footer {
-	background: #E05151;
-	padding: 20px;
-	clear: both;
-	text-align: center;
-	color: #fff;
+    background: #E05151;
+    padding: 20px;
+    clear: both;
+    text-align: center;
+    color: #fff;
 }
+
+
 
 
 
 /* ----------| Added Breakpoints to be more responsive |---------- */
+
 @media (max-width: 1290px) {
+	/* Header + Main */
+ 	#logo_headline,
+    main,
+    nav ul {
+        width: 100%; 
+    }
 
-#logo_headline, main, nav ul {
-	width: 100%;
-	clear: both;
+    nav ul {
+        padding-left: 17px;
+    }
 }
 
-nav ul {
-	padding-left: 17px;
-}
+@media (max-width: 912px) {
+	/* Home */
+    .image-block {
+        width: 100%;
+    }
 
+    .image-container [id^="pic"] {
+        min-height: 100%;
+    }
+
+	/* Blog */
+    #blog-entry {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        top: 20px;
+    }
+
+    .entry img {
+        min-height: 100%;
+    }
 }

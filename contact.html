@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="First Code Review for the FullStackDeveloper Course in the CodeFactory.">
+    <meta name="author" content="Patrick Klostermann">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:500|Montserrat" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="logo_headline">
+            <a href="index.html">
+                <img src="img/codefactory-logo.png" alt="CodeFactoryLogo">
+            </a>
+            <span>Patrick Klostermann - Future Full Stack Web Developer</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="AboutMe">About me</a></li>
+                <li><a href="blog.html" title="Blog">Blog</a></li>
+                <li><a class="current" href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <h1>Contact</h1>
+        <div class="col-left">
+            <form action="#">
+                <br> Name:
+                <br>
+                <input type="text" name="firstname" placeholder="please enter you name">
+                <br>
+                <br> E-Mail:
+                <br>
+                <input type="text" name="lastname" placeholder="please enter you email">
+                <br>
+                <br> Your Message:
+                <br>
+                <textarea name="msg" placeholder="enter your message"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit" onclick="show()">
+                <div id="msg">
+                    No, this is not really working.<br>
+                    Please use my email on the right side instead. ;P
+                </div>
+            </form>
+        </div>
+        <div class="col-right">
+            <h2>Contact Info</h2>
+            <br>
+            <img src="img/profile.png" alt="profile">
+            <p>
+                Patrick Klostermann
+                <br>
+                <br>
+                <a href="mailto:dev@netflair.at">dev@netflair.at</a>
+                <br> +43 664 24 19 229
+                <br>
+                <br> Ringgassel 1
+                <br> 3130 Herzogenburg
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Patrick Klostermann - CodeFactory</p>
+    </footer>
+
+<script>
+var button = document.getElementById('msg');
+function show() {
+    button.style.display="block";
+};    
+</script>
+
+</body>
+
+</html>
