@@ -303,11 +303,19 @@ footer {
 @media (max-width: 912px) {
 	/* Home */
     .image-block {
-        width: 100%;
+        height: 40vw; 
+    }
+
+    .image-block h2 {
+        font-size: 3vw;
     }
 
     .image-container [id^="pic"] {
         min-height: 100%;
+    }
+
+    .image-container {
+        height: 30vw;
     }
 
 	/* Blog */
