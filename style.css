@@ -333,4 +333,9 @@ footer {
     .entry img {
         min-height: 100%;
     }
+
+    /* Contact */
+    .col-left, .col-right {
+        width: 100%;
+    }
 }
